@@ -22,3 +22,9 @@ This project showcases:
 
 ## **Learning Journey**
 Through this project, I aim to deepen my understanding of Git and GitHub, improving my skills in version control and collaboration within development teams.
+
+## **Example Usage**
+```bash
+What would you like to do? (add/view/quit): add
+Enter a new to-do: Buy groceries
+'Buy groceries' has been added to your to-do list. 
