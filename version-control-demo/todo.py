@@ -1,5 +1,10 @@
 # todo.py
 
+def add_task(task):
+    with open('tasks.txt', 'a') as f:
+        f.write(task + '\n')
+    print(f"'{task}' has been added to your to-do list.")
+
 def main():
     todos = []
     
@@ -9,6 +14,7 @@ def main():
         if action == "add":
             todo = input("Enter a new to-do: ")
             todos.append(todo)
+            add_task(todo)  # Call the function to add the task to the file
             print(f"'{todo}' has been added to your to-do list.")
         elif action == "view":
             print("Your To-Do List:")
